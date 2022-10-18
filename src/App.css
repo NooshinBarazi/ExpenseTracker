@@ -1,38 +1,134 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0fdf4;
+  color: #0d1d2c;
 }
 
-.App-link {
-  color: #61dafb;
+.App-header{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container{
+  width: 350px;
+  display: flex;
+  flex-direction:column ;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.top-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expenseBox{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+}
+
+.expenseBox span{
+  font-weight: bold;
+  color: #dc2626;
+}
+
+.btn{
+  outline: none;
+  color: #fff;
+  background-color: #15803d;
+  border: 1px solid #15803d;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.primary{
+  padding: 8px;
+}
+
+.cancel{
+  background-color: #fff;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+}
+
+form{
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 10px 0px;
+}
+input{
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+input[type="radio"]{
+  margin-left: 10px;
+}
+
+.radioBox{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 14px;
+}
+
+.radioBox label{
+  margin-left: 3px;
+}
+
+.transaction-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.transaction{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #f0fdf4;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 500;
+  border-right: 4px solid #15803d;
+
+}
+
+.transaction-title{
+  display: flex;
+  justify-content: start;
+}
+
+.serach-input{
+ margin-bottom: 10px;
+ background-color: #f3f4f6;
 }
